@@ -22,8 +22,7 @@
     "test": "ember test",
     "test:node": "yarn build && babel node-tests -d node-tests-out && qunit -c lib -t node-tests-out",
     "test:all": "ember try:each",
-    "prepublishOnly": "yarn build",
-    "postpublish": "ember ts:clean"
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "babel-plugin-filter-imports": "pzuraq/babel-plugin-filter-imports#a5a41b2",
