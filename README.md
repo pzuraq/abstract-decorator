@@ -65,6 +65,18 @@ configuration necessary!
 
 This package is compatible with Node v10 and above out of the box.
 
+### Decorator Transforms
+
+This package supports the stage 1/legacy decorators transform. This is 
+transform that is the [current recommendation](https://github.com/tc39/proposal-decorators#how-should-i-use-decorators-in-transpilers-today)
+of the champions of the decorators proposal.
+
+### Typescript
+
+This package does _not_ support Typescript. Typescript has first class 
+support for abstract classes, so there's no need to include extra 
+weight via this decorator.
+
 ### Ember
 
 - Ember.js v2.18 or above
