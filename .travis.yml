@@ -38,6 +38,7 @@ jobs:
       install:
         - yarn install --non-interactive
       script:
+        - yarn build
         - yarn lint:hbs
         - yarn lint:js
         - yarn test
@@ -45,6 +46,14 @@ jobs:
     - name: "Floating Dependencies"
       script:
         - yarn test
+
+    - name: "Production"
+      script:
+        - yarn test --environment=production
+
+    - name: "Node"
+      script:
+        - yarn test:node
 
     # we recommend new addons test the current and previous LTS
     # as well as latest stable release (bonus points to beta/canary)

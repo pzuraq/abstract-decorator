@@ -24,6 +24,8 @@
 /tests/
 /yarn.lock
 .gitkeep
+/node-tests/
+/node-tests-out/
 
 # ember-try
 /.node_modules.ember-try/
